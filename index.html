@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kartik Dubey | Backend Developer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,58 +19,219 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+<section class="hero">
+  <div class="hero-wrapper">
+
+    <!-- LEFT -->
     <div class="hero-content">
       <h1>Hi, I'm <span>Kartik Dubey</span></h1>
-
-      <p class="subtitle">
-        <span id="typing"></span>
-      </p>
-
+      <p class="subtitle">Backend Developer • Python • Systems</p>
       <p class="description">
-        Final-year B.Tech Computer Engineering student (2026 batch) focused on
-        scalable backend systems, Python automation, and GenAI-powered applications.
+        Final-year B.Tech Computer Engineering student (2026 batch)
+        focused on scalable backend systems, automation, and GenAI.
       </p>
 
       <div class="cta">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
+    <!-- RIGHT -->
+    <div class="hero-visual">
 
-    <div class="projects">
-      <div class="project-card">
-        <h3>Internship Letter Automation Portal</h3>
-        <p>Automated bilingual internship letter generation with PDF export.</p>
+      <!-- BACKGROUND -->
+      <div class="hero-bg"></div>
+
+      <!-- DOODLES (BEHIND IMAGE) -->
+      <div class="hero-doodles">
+        <svg class="doodle-svg heart" viewBox="0 0 100 100">
+          <path d="M50 90 C10 60, 10 20, 40 30 C50 10, 90 20, 60 30 C90 60, 50 90, 50 90"/>
+        </svg>
+
+        <svg class="doodle-svg swirl" viewBox="0 0 120 120">
+          <path d="M60 10 C20 25, 20 100, 60 110 C100 95, 100 45, 60 55"/>
+        </svg>
+
+        <svg class="doodle-svg star" viewBox="0 0 100 100">
+          <path d="M50 5 L60 40 L95 50 L60 60 L50 95 L40 60 L5 50 L40 40 Z"/>
+        </svg>
+
+        <svg class="doodle-svg plane" viewBox="0 0 100 60">
+          <path d="M0 30 L100 30 M60 10 L100 30 L60 50"/>
+        </svg>
       </div>
 
-      <div class="project-card">
-        <h3>Real-Time Log Monitoring System</h3>
-        <p>Live server log streaming using WebSockets.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>AI Mental Health Classification</h3>
-        <p>NLP & Transformer-based mental health classification system.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>WebSocket Chat Application</h3>
-        <p>Real-time chat system using WebSockets.</p>
-      </div>
+      <!-- IMAGE -->
+      <img src="image.png" alt="Kartik Dubey" class="hero-img" />
     </div>
-  </section>
 
-  <!-- CONTACT (FIXED & VISIBLE) -->
+  </div>
+</section>
+
+ <!-- PROJECTS -->
+<section id="projects" class="projects-section">
+
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-wrapper">
+
+    <!-- LEFT SCROLL -->
+    <button class="scroll-btn left" onclick="scrollProjects(-1)">&#10094;</button>
+
+    <div class="projects-container" id="projectsScroll">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>JNPA Internship Letter Generator</h3>
+            <p>
+              Automated system to generate, preview, and download official internship
+              letters with dynamic student data and proper formatting.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/JNPA-Internship-letter-Generator" target="_blank" class="btn">GitHub Repo</a>
+            <a href="https://web-production-8a80.up.railway.app/" target="_blank" class="btn secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>URL–QR Suite</h3>
+            <p>
+              Web utility that shortens URLs and generates QR codes instantly
+              with a clean, user-friendly interface.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/url-qr-suite" target="_blank" class="btn">GitHub Repo</a>
+            <a href="https://kartik915.pythonanywhere.com/" target="_blank" class="btn secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Interactive Streamlit Dashboard</h3>
+            <p>
+              Data-driven dashboard built using Streamlit to visualize insights
+              through charts, filters, and real-time updates.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/Streamlit-Dashboard" target="_blank" class="btn">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Real-Time Log Monitoring System</h3>
+            <p>
+              Scalable log monitoring system inspired by BrowserStack infrastructure,
+              enabling real-time log streaming and live analysis.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/Log-monitoring-BrowserStack" target="_blank" class="btn">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>RasoiRescue – Food Management Platform</h3>
+            <p>
+              Platform focused on reducing food waste by connecting surplus food
+              sources with those in need through a simple web interface.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/RasoiRescue" target="_blank" class="btn">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 6 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>React Weather App</h3>
+            <p>
+              Responsive weather application built with React that fetches and
+              displays real-time weather data based on user location.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/react-weather-app" target="_blank" class="btn">GitHub Repo</a>
+            <a href="https://kartik-react-weather-app.vercel.app/" target="_blank" class="btn secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 7 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>SuperChat – Real-Time Messaging App</h3>
+            <p>
+              Real-time chat application with instant message delivery,
+              user authentication, and modern UI interactions.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/superchat" target="_blank" class="btn">GitHub Repo</a>
+            <a href="https://superchat-roan.vercel.app/login" target="_blank" class="btn secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 8 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Real-Time Motion Detector</h3>
+            <p>
+              Real-time motion detection system using Python and OpenCV that
+              highlights movement from live webcam video.
+            </p>
+          </div>
+          <div class="card-back">
+            <h3>Project Links</h3>
+            <a href="https://github.com/Kartik915d/Real-Time-Motion-Detector" target="_blank" class="btn">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SCROLL -->
+    <button class="scroll-btn right" onclick="scrollProjects(1)">&#10095;</button>
+
+  </div>
+</section>
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>📧 Kartikdubey03@gmail.com</p>
-    <p>📱 +91-XXXXXXXXXX</p>
     <p>
       🔗 <a href="https://www.linkedin.com/in/kartik-dubey915/" target="_blank">LinkedIn</a> |
       <a href="https://github.com/Kartik915d" target="_blank">GitHub</a>
@@ -80,6 +242,5 @@
     © 2026 Kartik Dubey
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
